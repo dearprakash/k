@@ -1,0 +1,87 @@
+// Syntax Highlighting Base
+pre {
+  padding: 0;
+  line-height: 1.5;
+  white-space: pre;
+  overflow: scroll;
+  word-break: inherit;
+  word-wrap: inherit;
+}
+.highlight {
+  background-color: $syntax-bg; 
+  border: 1px solid $syntax-border;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  & code {
+    padding: 0;
+  }
+}
+code {
+  color: $main-syntax-text;
+  background-color: $syntax-bg;
+  padding: 0.2em 0.5em;
+  border-radius: 0.25em;
+}
+
+// Syntax Color Coding
+.c { color: $syntax-comment; } // Comment //
+.err { color: $dark-pink; background-color: $removed } // Error //
+.k { color: $strong-yellow; } // Keyword //
+.o { color: $main-syntax-text; } // Operator //
+.cm { color: $syntax-comment; } // Comment Multiline //
+.cp { color: $syntax-comment; } // Comment Preproc //
+.c1 { color: $syntax-comment; } // Comment Single //
+.cs { color: $syntax-comment; } // Comment Special //
+.gd { color: $main-syntax-text; background-color: $removed; } // Generic Deleted //
+.ge { color: $main-syntax-text; font-style: italic } // Generic Emphasis //
+.gr { color: $dark-pink; } // Generic Error //
+.gh { color: $syntax-comment; } // Generic Heading //
+.gi { color: $main-syntax-text; background-color: $inserted; } // Generic Inserted //
+.go { color: $main-syntax-text; } // Generic Output //
+.gp { color: $main-syntax-text; } // Generic Prompt //
+.gs { font-weight: bold } // Generic Strong //
+.gu { color: $light-gray-text; } // Generic Subheading //
+.gt { color: $dark-pink } // Generic Traceback //
+.kc { color: $main-syntax-text; } // Keyword Constant //
+.kd { color: $main-syntax-text; } // Keyword Declaration //
+.kn { color: $main-syntax-text; } // Keyword Namespace //
+.kp { color: $secondary-color; } // Keyword Pseudo //
+.kr { color: $main-syntax-text; } // Keyword Reserved //
+.kt { color: $dark-cyan; } // Keyword Type //
+.m { color: $dark-cyan; } // Literal Number //
+.s { color: $dark-cyan; } // Literal String //
+.n { color: $strong-blue; } // Main Syntax Text //
+.na { color: $strong-yellow; } // Name Attribute //
+.nb { color: $dark-cyan; } // Name Builtin //
+.nc { color: $dark-cyan; } // Name Class //
+.no { color: $strong-yellow; } // Name Constant //
+.nd { color: $dark-cyan; } // Name Decorator //
+.ni { color: $dark-pink; } // Name Entity //
+.ne { color: $dark-pink; } // Name Exception //
+.nf { color: $strong-blue; } // Name Function //
+.nl { color: $dark-pink; } // Name Label //
+.nn { color: $main-syntax-text } // Name Namespace //
+.nt { color: $strong-blue; } // Name Tag //
+.nv { color: $strong-yellow; } // Name Variable //
+.ow { color: $main-syntax-text; } // Operator Word //
+.w { color: $light-gray-text; } // Text Whitespace //
+.mf { color: $dark-cyan; } // Literal Number Float //
+.mh { color: $dark-cyan; } // Literal Number Hex //
+.mi { color: $dark-cyan; } // Literal Number Integer //
+.mo { color: $dark-cyan; } // Literal Number Oct //
+.sb { color: $dark-cyan; } // Literal String Backtick //
+.sc { color: $dark-cyan; } // Literal String Char //
+.sd { color: $dark-cyan; } // Literal String Doc //
+.s2 { color: $dark-cyan; } // Literal String Double //
+.se { color: $dark-cyan; } // Literal String Escape //
+.sh { color: $dark-cyan; } // Literal String Heredoc //
+.si { color: $dark-cyan; } // Literal String Interpol //
+.sx { color: $dark-cyan; } // Literal String Other //
+.sr { color: $dark-cyan; } // Literal String Regex //
+.s1 { color: $dark-cyan; } // Literal String Single //
+.ss { color: $secondary-color; } // Literal String Symbol //
+.bp { color: $strong-blue; } // Name Builtin Pseudo //
+.vc { color: $strong-yellow; } // Name Variable Class //
+.vg { color: $strong-yellow; } // Name Variable Global //
+.vi { color: $strong-yellow; } // Name Variable.Instance //
+.il { color: $dark-cyan; } // Literal Number Integer Long //

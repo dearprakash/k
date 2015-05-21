@@ -1,10 +1,23 @@
 ---
-title: Welcome to Middleman
+title: Lauren Dorman - Front-End Developer &amp; Designer
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<section class='about'>
+  <%= partial "partials/about" %>
+</section>
+
+<section id='work' class='float-left'>
+  <%= partial 'partials/work' %>
+</section>
+
+<section id='contributions' class='float-left'>
+  <%= partial 'partials/contributions' %>
+</section>
+
+<section id='writing' class='float-left clear-left'>
+  <%= partial 'partials/writing' %>
+</section>
+
+<section id='elsewhere' class='float-left'>
+  <%= partial 'partials/elsewhere' %>
+</section>

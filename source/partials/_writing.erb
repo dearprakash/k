@@ -1,0 +1,7 @@
+<h2 class='section__title uppercase'>Writing</h2>
+<ol class='main-content__list'>
+  <% blog.articles[0...3].each do |article| %>
+  <li><%= link_to article.title, article.url %></li>
+  <% end %>
+</ol>
+<button class='btn--primary'><%= link_to "View more", data.writing.view_more, :class => 'btn__text uppercase' %></button>

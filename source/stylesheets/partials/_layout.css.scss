@@ -1,0 +1,27 @@
+// Layout
+
+.wrapper {
+  margin: 0 1.5em;
+}
+
+#work, #contributions, #writing, #elsewhere {
+  width: 100%;
+} 
+
+@media (min-width: $medium) {
+  #work, #contributions, #writing, #elsewhere {
+    width: 40%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: $large) {
+  .wrapper {
+    max-width: 34em;
+    margin: 0 auto;
+  }
+}
+
+#footer {
+ padding: 3.5em 0 1em 0;
+}
