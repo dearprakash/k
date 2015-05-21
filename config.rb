@@ -1,6 +1,5 @@
 # General Configurations
 activate :livereload
-activate :directory_indexes
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
@@ -21,6 +20,8 @@ activate :blog do |blog|
   blog.per_page = 10
   blog.page_link = '{num}'
 end
+
+activate :directory_indexes
 
 page "/feed.xml", layout: false
 
