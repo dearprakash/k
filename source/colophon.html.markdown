@@ -3,7 +3,7 @@ title: Colophon
 ---
 
 # Colophon
-This website was produced over the course of a few weeks during my time as an apprentice at [Sparkbox](http://seesparkbox.com).
+This website was produced over the course of several weeks during my time as an apprentice at [Sparkbox](http://seesparkbox.com).
 
 ## Design
 When it came to design decisions, I took a rapid-prototyping approach. [CodePen](http://codepen.io) is where majority of my protyping took place – where I was able to iterate quickly to get the ball rolling.
