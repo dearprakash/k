@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<meta name="apple-mobile-web-app-title" content="Lauren Dorman">
+<meta name="application-name" content="Lauren Dorman">
+<meta name="msapplication-TileColor" content="#5b3c70">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+
+    <!-- Viewport, set to device width -->
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta name="google-site-verification" content="vG3chRW_V2wGrc9qlrMT9v65BJdYBVMrjtAueAPmhD8" />
+    
+    <title>Style Guide</title>
+
+    <!-- TypeKit -->
+    <script src='//use.typekit.net/qec0yvt.js'></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+    <link href="/stylesheets/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body class='style-guide style-guide_index'>
+    <main class='wrapper'>
+      <header>
+
+<a href="/">
+  <svg id="lauren-dorman-logo" width="50" height="50">
+    <defs>
+      <linearGradient id="gradient-bg" x1="0%" y1="25%" x2="100%" y2="25%">
+
+        <stop offset="0%" stop-color="#5B3C70">
+          <animate attributeName="stop-color" values="#5B3C70; #E57B5D; #5B3C70" dur="10s" repeatCount="indefinite"></animate>
+        </stop>
+
+        <stop offset="100%" stop-color="#E57B5D">
+          <animate attributeName="stop-color" values="#E57B5D; #5B3C70; #E57B5D" dur="10s" repeatCount="indefinite"></animate>
+        </stop>
+
+      </linearGradient>
+    </defs>
+
+    <rect fill="url(#gradient-bg)" width="50" height="50" />
+
+    <path id="LD" fill="#FFFFFF" d="M30.1,10.9h-8.8v17.2h7.5V18h1.3c2.2,0,3.2,2,3.2,8.3c0,2.6-0.3,5.8-3.2,5.8H16.9V10.9H8.8v28.1
+    h21.4c8.4,0,11.1-7.8,11.1-12.8C41.2,17.7,38.5,10.9,30.1,10.9z" />
+  </svg>
+</a>
+
+</header>
+      <h1>Style Guide</h1>
+
+<p>This Style Guide is serves as a very opinionated and intentional guide to how I develop websites, covering my approach to writing HTML, Sass, CSS and the likes.</p>
+
+<h2>Table of Contents</h2>
+
+<ol>
+<li><a href="#html5">HTML5</a>
+
+<ol>
+<li><a href="#doctype">Doctype</a></li>
+<li><a href="#writing-html-syntax">Writing HTML Syntax</a></li>
+<li><a href="#spacing">Spacing</a></li>
+<li><a href="#urls">URLs</a></li>
+</ol></li>
+<li><a href="#sass">Sass</a>
+
+<ol>
+<li><a href="#variables">Variables</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#mixins">Mixins</a></li>
+<li><a href="#nesting">Nesting</a></li>
+<li><a href="#class-names">Class Names</a></li>
+</ol></li>
+<li><a href="#css">CSS</a>
+
+<ol>
+<li><a href="#writing-css-syntax">Writing CSS Syntax</a></li>
+<li><a href="#properties-and-values">Properties and Values</a></li>
+<li><a href="#browser-prefixes">Browser Prefixes</a></li>
+<li><a href="#selectors">Selectors</a></li>
+<li><a href="#pseudo-elements-and-pseudo-classes">Pseudo-elements and Pseudo-classes</a></li>
+</ol></li>
+<li><a href="#inspiration">Inspiration</a></li>
+</ol>
+
+<h2><a name='html5'></a>HTML5</h2>
+
+<p>The use of HTML5 should strictly follow the <a href="http://www.w3.org/TR/html5/">HTML5 W3 Specifications</a>. For browser support, use <a href="http://caniuse.com/#cats=HTML5">CanIUse</a>.</p>
+
+<h3><a name='doctype'></a>Doctype</h3>
+
+<p>Enforce standards mode and more consistent rendering in every browser by declaring the HTML5 doctype at the beginning of every HTML page.</p>
+<pre class="highlight html"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre>
+
+<h3><a name='writing-html-syntax'></a>Writing HTML Syntax</h3>
+
+<ul>
+<li>Use a soft tab (two spaces), so that the HTML is rendered the same across browsers.</li>
+<li>Nested elements should be indented once per level.</li>
+<li>When an attribute requires it, use single quotes unless for content.</li>
+<li>Use lowercase and dashes, not underscore or camelCase.</li>
+<li>Do not include trailing slash in self-closing elements.</li>
+</ul>
+
+<h3><a name='spacing'></a>Spacing</h3>
+
+<p>Large sections of HTML should be separated by a one line break for readability.</p>
+<pre class="highlight html"><code><span class="nt">&lt;main&gt;</span>
+
+  <span class="nt">&lt;section&gt;</span>
+    ...
+  <span class="nt">&lt;/section&gt;</span>
+
+  <span class="nt">&lt;section&gt;</span>
+    ...
+  <span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;/main&gt;</span>
+</code></pre>
+
+<h3><a name='urls'></a>URLs</h3>
+
+<p>Use relative URLs whenever possible; this will prevent problems if the base URL ever changes during a project&rsquo;s lifespan.</p>
+<pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'/about'</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+
+<h2><a name='sass'></a>Sass</h2>
+
+<p><a href="http://sass-lang.com/">Sass</a> is my preferred choice for CSS preprocessing, it allows the author to add variables, nesting, functions, and mixins to their stylesheets. This document uses Sass syntax.</p>
+
+<h3><a name='variables'></a>Variables</h3>
+
+<p>Write global variables just as you would a CSS declaration, but optionally include one line break and comments between related variables for grouping and readability.</p>
+<pre class="highlight scss"><code><span class="cm">/* Colors */</span>
+<span class="nv">$c--primary</span><span class="p">:</span> <span class="mh">#5B3C70</span><span class="p">;</span>
+<span class="nv">$c--secondary</span><span class="p">:</span> <span class="mh">#E57B5D</span><span class="p">;</span>
+<span class="nv">$c--primary-text</span><span class="p">:</span> <span class="mh">#0d0d0d</span><span class="p">;</span>
+
+<span class="cm">/* Typography */</span>
+<span class="nv">$font-stack</span><span class="p">:</span> <span class="s1">'proxima-nova'</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+
+<span class="cm">/* Base Styles */</span>
+<span class="nv">$base-margin</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+<span class="nv">$base-padding</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+<span class="nv">$base-border</span><span class="p">:</span> <span class="m">0</span><span class="mi">.25rem</span> <span class="nb">solid</span><span class="p">;</span>
+<span class="nv">$base-border-radius</span><span class="p">:</span> <span class="m">0</span><span class="mi">.125rem</span><span class="p">;</span>
+</code></pre>
+
+<p>When writing local variables, include them as you would a CSS declaration, but always declare them before usage.</p>
+<pre class="highlight scss"><code><span class="nc">.example</span> <span class="p">{</span>
+  <span class="nv">$base</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nv">$base</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="nv">$base</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="nv">$base</span><span class="o">/</span><span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>It is a best practice to include your variables in a seperate stylesheet (partial) titled <code>_variables.scss</code> and import that stylesheet into your main <code>style.scss</code> stylesheet where your Sass sources are being compiled.</p>
+
+<p>When importing, do not include the <code>.scss</code> file extension or prepending underscore.</p>
+<pre class="highlight scss"><code><span class="k">@import</span> <span class="s1">'utilities/variables'</span><span class="p">;</span>
+</code></pre>
+
+<h3><a name='functions'></a>Functions</h3>
+<pre class="highlight plaintext"><code>Documentation in progress.
+</code></pre>
+
+<h3><a name='mixins'></a>Mixins</h3>
+<pre class="highlight plaintext"><code>Documentation in progress.
+</code></pre>
+
+<h3><a name='nesting'></a>Nesting</h3>
+
+<p>Avoid nesting in Sass for the sake of it. Things can get pretty ugly, pretty quickly.</p>
+<pre class="highlight scss"><code><span class="nc">.content__list</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nt">li</span> <span class="p">{</span>
+      <span class="nt">a</span> <span class="p">{</span>
+        <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The result will not be good.</p>
+<pre class="highlight css"><code><span class="nc">.content__list</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nc">.content__list</span> <span class="nt">ul</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nc">.content__list</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nc">.content__list</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nc">.content__list</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</code></pre>
+
+<h3><a name='class-names'></a>Class Names</h3>
+
+<ul>
+<li>Use the BEM (block, element, modifier) methodology for naming things, i.e., <code>btn__text--sold-out</code>.</li>
+<li>Be specific when naming classes. Use meaningful names that describe the action or functionality of a class rather than is appearance, i.e., <code>.btn--danger</code> instead of <code>.btn--red</code>.</li>
+<li>Abbreviate some class names, but make sure anyone can understand the class, i.e., <code>.cta</code> instead of <code>.call-to-action</code>.</li>
+<li>Prefix classes based on the closest parent element or base class.</li>
+</ul>
+
+<h2><a name='css'></a>CSS</h2>
+
+<p>The use of CSS should strictly follow the <a href="http://www.w3.org/TR/CSS/">CSS W3 Specifications</a> for CSS properties and values. For browswer support, use <a href="http://caniuse.com/#cats=CSS">CanIUse</a>.</p>
+
+<h3><a name='writing-css-syntax'></a>Writing CSS Syntax</h3>
+
+<ul>
+<li>For readability, use a soft tab (two spaces).</li>
+<li>Nested elements (in Sass) should be indented with a soft tab.</li>
+<li>Include one space after the <code>:</code> for each declaration.</li>
+<li>Each individual declaration should be written on its own line and indented with a soft tab.</li>
+<li>End each declaration with a semi-colon.</li>
+</ul>
+
+<h3><a name='properties-and-values'></a>Properties and Values</h3>
+
+<ul>
+<li>Avoid specifying units for zero values, i.e., <code>margin: 0;</code> instead of <code>margin: 0px</code>;</li>
+<li>Use shorthand whenever possible, i.e., <code>font</code> instead of <code>font-size</code> and <code>font-family</code>.</li>
+<li>Use <code>!important</code> when necessary, but this should be avoided.</li>
+<li>Use single quotes and never double quotes.</li>
+<li>Stay consistent with units, i.e., do not use a mixture of <code>rem</code> and <code>px</code> for typography, unless for browser support where a <code>rem</code> fallback is needed.</li>
+</ul>
+
+<h3><a name='browser-prefixes'></a>Browser Prefixes</h3>
+
+<p>Figuring out which properties require browser prefixes is a hefty task, but <a href="http://caniuse.com">CanIUse</a> provides information about browser support and which properties require prefixes. I recommend using <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> if you are comfortable using a taskrunner.</p>
+
+<h3><a name='selectors'></a>Selectors</h3>
+
+<ul>
+<li>Class selectors should be used before ID selectors.</li>
+<li>The universal <code>*</code> selector should be avoided at all costs.</li>
+<li>Avoid the use of multiple type selectors (also known as descendant selectors) whenever possible, i.e., <code>ul li a</code>.</li>
+<li>If selectors use the same declorations, group them together, i.e., <code>h1, h2, h3, h4, h5, h6 { ... }</code>.</li>
+</ul>
+
+<h3><a name='pseudo-elements-and-pseudo-classes'></a>Pseudo-elements and Pseudo-classes</h3>
+
+<p>When grouping pseudo-elements and classes with other selectors, include after the element they affect.</p>
+<pre class="highlight css"><code><span class="nt">a</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</code></pre>
+
+<p>Always declare the pseudo-elements <code>:before</code> first and <code>:after</code> following, but they should always come after element they affect. It is also best practice to include <code>content</code> property first.</p>
+<pre class="highlight css"><code><span class="nt">h1</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nt">h1</span><span class="nd">:before</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nt">h1</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">' - See below'</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>When combining pseudo-classes, use two colons for the second class, i.e., <code>h1:after::hover</code>.</p>
+
+<h2><a name='inspiration'></a>Inspiration</h2>
+
+<p>This document is inspired by my personal writing style, <a href="http://codeguide.co/">Code Guide by @mdo</a>, <a href="https://github.com/google/styleguide">Google&rsquo;s Styleguide</a>, and <a href="http://cssguidelin.es/">CSS Guidelines</a>.</p>
+
+      <footer id="footer" class='clear-left'>
+  <p class='footer__text center'>Handcrafted by <a href="/">Lauren Dorman</a>.</p>
+  <p class='footer__text center'>View the <a href="https://github.com/laurendorman/laurendorman.github.io/tree/dev">source</a>, <a href="/style-guide">style guide</a> and <a href="/colophon">colophon</a>.</p>
+</footer>
+    </main>
+  </body>
+</html>
