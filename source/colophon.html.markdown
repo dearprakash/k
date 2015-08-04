@@ -6,7 +6,7 @@ title: Colophon
 This website was produced over the course of several weeks during my time as an apprentice at [Sparkbox](http://seesparkbox.com).
 
 ## Design
-When it came to design decisions, I took a rapid-prototyping approach. [CodePen](http://codepen.io) is where majority of my protyping took place – where I was able to iterate quickly to get the ball rolling.
+When it came to design decisions, I took a rapid-prototyping approach. [CodePen](http://codepen.io) is where majority of my protoyping took place – where I was able to iterate quickly to get the ball rolling fast.
 
 ### Typography
 This website uses two primary typefaces, Proxima Nova, served by [TypeKit](http://typekit.com) alongside Monospace for `<code>` and `<pre>` things. Fallback fonts for Proxima Nova include Helvetica and system default sans-serif.
@@ -26,10 +26,7 @@ Using [Middleman](http://middlemanapp.com), for me, was a no-brainer. Middleman 
 Version control is managed though `$ git` and stored in a repository on [GitHub](https://github.com/laurendorman/laurendorman.github.io).
 
 ### Universal SSL
-I am using a free SSL in order to improve my visibility on the web. SSL for this site is provided by [CloudFlare](https://blog.cloudflare.com/introducing-universal-ssl/).
+I am using a Universal SSL in order to improve my [visibility](http://www.forbes.com/sites/johnrampton/2014/08/30/should-i-switch-from-http-to-https-for-seo-reasons/) on the web. SSL for this site is provided by [CloudFlare](https://blog.cloudflare.com/introducing-universal-ssl/).
 
 ### Analytics
-This site uses [Google Analytics](http://www.google.com/analytics/), servered by [CloudFlare](http://cloudflare.com).
-
-
-
+This site uses [Google Analytics](http://www.google.com/analytics/), served by [CloudFlare](http://cloudflare.com).
