@@ -1,6 +1,6 @@
 ---
 title: Style Guide
-description: A code styleguide for front-end development.
+description: A code style guide for front-end development.
 ---
 # Style Guide
 
@@ -31,7 +31,7 @@ This Style Guide is serves as a very opinionated and intentional guide to how I 
 The use of HTML5 should strictly follow the [HTML5 W3 Specifications](http://www.w3.org/TR/html5/). For browser support, use [CanIUse](http://caniuse.com/#cats=HTML5).
 
 ### <a name='doctype'></a>Doctype
-Enforce standards mode and more consistent rendering in every browser by declaring the HTML5 doctype at the beginning of every HTML page.
+Enforce standards mode and more consistent rendering in every browser by declaring the HTML5 Doctype at the beginning of every HTML page.
 
 ```html
 <!DOCTYPE html>
@@ -102,7 +102,7 @@ When writing local variables, include them as you would a CSS declaration, but a
 }
 ```
 
-It is a best practice to include your variables in a seperate stylesheet (partial) titled `_variables.scss` and import that stylesheet into your main `style.scss` stylesheet where your Sass sources are being compiled.
+It is a best practice to include your variables in a separate stylesheet (partial) titled `_variables.scss` and import that stylesheet into your main `style.scss` stylesheet where your Sass sources are being compiled.
 
 When importing, do not include the `.scss` file extension or prepending underscore.
 
@@ -153,7 +153,7 @@ The result will not be good.
 - Prefix classes based on the closest parent element or base class.
 
 ## <a name='css'></a>CSS
-The use of CSS should strictly follow the [CSS W3 Specifications](http://www.w3.org/TR/CSS/) for CSS properties and values. For browswer support, use [CanIUse](http://caniuse.com/#cats=CSS).
+The use of CSS should strictly follow the [CSS W3 Specifications](http://www.w3.org/TR/CSS/) for CSS properties and values. For browser support, use [CanIUse](http://caniuse.com/#cats=CSS).
 
 ### <a name='writing-css-syntax'></a>Writing CSS Syntax
 - For readability, use a soft tab (two spaces).
@@ -167,16 +167,16 @@ The use of CSS should strictly follow the [CSS W3 Specifications](http://www.w3.
 - Use shorthand whenever possible, i.e., `font` instead of `font-size` and `font-family`.
 - Use `!important` when necessary, but this should be avoided.
 - Use single quotes and never double quotes.
-- Stay consistent with units, i.e., do not use a mixture of `rem` and `px` for typography, unless for browser support where a `rem` fallback is needed.
+- Stay consistent with units, i.e., do not use a mixture of `rem` and `px` for typography, unless for browser support where a `rem` fall back is needed.
 
 ### <a name='browser-prefixes'></a>Browser Prefixes
-Figuring out which properties require browser prefixes is a hefty task, but [CanIUse](http://caniuse.com) provides information about browser support and which properties require prefixes. I recommend using [Autoprefixer](https://github.com/postcss/autoprefixer) if you are comfortable using a taskrunner.
+Figuring out which properties require browser prefixes is a hefty task, but [CanIUse](http://caniuse.com) provides information about browser support and which properties require prefixes. I recommend using [Autoprefixer](https://github.com/postcss/autoprefixer) if you are comfortable using a task runner.
 
 ### <a name='selectors'></a>Selectors
 - Class selectors should be used before ID selectors.
 - The universal `*` selector should be avoided at all costs.
 - Avoid the use of multiple type selectors (also known as descendant selectors) whenever possible, i.e., `ul li a`.
-- If selectors use the same declorations, group them together, i.e., `h1, h2, h3, h4, h5, h6 { ... }`.
+- If selectors use the same declarations, group them together, i.e., `h1, h2, h3, h4, h5, h6 { ... }`.
 
 ### <a name='pseudo-elements-and-pseudo-classes'></a>Pseudo-elements and Pseudo-classes
 When grouping pseudo-elements and classes with other selectors, include after the element they affect.
