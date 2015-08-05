@@ -34,4 +34,4 @@ activate :deploy do |deploy|
 end
 ```
 
-Running `middleman deploy` will build and push your build to the `master` branch of your repository, where it will then be live for production.
+Running `$ middleman deploy` will build and push your build to the `master` branch of your repository, where it will then be live for production.
