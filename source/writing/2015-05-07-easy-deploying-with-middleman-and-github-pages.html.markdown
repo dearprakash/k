@@ -9,7 +9,7 @@ tags: ruby on rails, middleman, github
 
 I wanted easy way to deploy Middleman's static files to GitHub Pages – all while keeping the source available, without having to manage multiple repositories.
 
-Create a `dev` branch in your repository, this is where your `source` files will be housed and will be your working/development branch.
+Create a `dev` branch in your repository, this is where your `source` files will be housed and will serve as your working/development branch.
 
 ```programming
 $ git checkout -b dev
