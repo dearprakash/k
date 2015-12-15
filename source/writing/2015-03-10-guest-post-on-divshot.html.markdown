@@ -5,7 +5,7 @@ tags: divshot, sparkbox
 ---
 
 # Guest Post on Divshot
-<time>March 10, 2015</time>
+<time>March 10th, 2015</time>
 
 I was given the opportunity to help write a guest post for [Sparkbox](http://seesparkbox.com) on [Divshot's](http://divshot.io) blog.
 

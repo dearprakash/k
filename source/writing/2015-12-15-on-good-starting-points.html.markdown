@@ -5,6 +5,7 @@ tags:
 ---
 
 # On Good Starting Points
+<time>December 15th, 2015</time>
 
 I oftentimes find myself wondering where to start when I am interested in learning about a subject or adding something new into my daily routine. Whether its my intention to try out a new framework, start a book or get back in the boxing gym, there is a constant internal battle of when or how to start. I begin to overthink what it is that I want to accomplish, making the thing more intimidating than it actually is. Don’t allow your search for a good starting point hold you back from starting something today.
 

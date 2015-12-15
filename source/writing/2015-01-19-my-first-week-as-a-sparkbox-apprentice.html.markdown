@@ -5,6 +5,7 @@ tags:
 ---
 
 # My First Week as a Sparkbox Apprentice
+<time>January 19th, 2015</time>
 
 My first week as an apprentice at [Sparkbox](http://seesparkbox.com) is in the bag and I already feel that I am learning at a much quicker pace than I was on my own. I've been working with Git regularly, began customizing my shell, gained a few pingpong skills and had my fair share of amazing food. I am excited for what the future holds.
 
