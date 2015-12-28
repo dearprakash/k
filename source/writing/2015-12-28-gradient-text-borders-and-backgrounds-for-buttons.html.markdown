@@ -9,7 +9,7 @@ tags: sass, css
 
 Working with [Trillectro](https://twitter.com/trillectro) has resulted in the use of **a lot** of gradients. After exploring a few different button styles, I came up with a good solution for gradient ghost buttons with gradient text. To make my life easier, I created a couple of Sass mixins that would allow me to reuse those styles throughout the project when needed.
 
-When creating a class for gradient text, it is best to apply it to a `<span>` tag so that the gradient is clipped to only to the text itself. The [pen](http://codepen.io/laurendorman/pen/ZQBYmV) below shows how those styles are used.
+When creating a class for gradient text, it is best to apply it to a `<span>` tag so that the gradient is clipped only to the text itself. The [pen](http://codepen.io/laurendorman/pen/ZQBYmV) below shows how those styles are used.
 
 <iframe height='435' scrolling='no' src='//codepen.io/laurendorman/embed/ZQBYmV/?height=435&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 
