@@ -7,7 +7,7 @@ tags: sass, css
 # Gradient Text, Borders and Backgrounds for Buttons
 <time>December 28th, 2015</time>
 
-Working with [Trillectro](https://twitter.com/trillectro) has resulted in the use of <strong>a lot</strong> of gradients. After exploring a few different button styles, I came up with a good solution for gradient ghost buttons with gradient text. To make my life easier, I created a couple of Sass mixins that would allow me to reuse those styles throughout the project when needed.
+Working with [Trillectro](https://twitter.com/trillectro) has resulted in the use of **a lot** of gradients. After exploring a few different button styles, I came up with a good solution for gradient ghost buttons with gradient text. To make my life easier, I created a couple of Sass mixins that would allow me to reuse those styles throughout the project when needed.
 
 When creating a class for gradient text, it is best to apply it to a `<span>` tag so that the gradient is clipped to only to the text itself. The [pen](http://codepen.io/laurendorman/pen/ZQBYmV) below shows how those styles are used.
 
