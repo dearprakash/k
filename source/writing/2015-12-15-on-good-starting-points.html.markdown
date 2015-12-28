@@ -12,7 +12,7 @@ I oftentimes find myself wondering where to start when I am interested in learni
 If you find yourself struggling to figure out where to start, remind yourself to:
 
 1. Think in [sprints](http://www.gv.com/sprint/).
-1. Don't look a week ahead, look at the now. Block out an hour of time.
+1. Don't look a week ahead, look at the now.
 1. Create small, actionable to-do lists.
 1. Be precise. Generalities create larger tasks.
 1. Spend less time organizing and more time doing the thing.
