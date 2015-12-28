@@ -17,6 +17,6 @@ I created a [gist](https://gist.github.com/laurendorman/2af852cd1eb92c713a1c) to
 
 <script src="https://gist.github.com/laurendorman/2af852cd1eb92c713a1c.js"></script>
 
-These mixins are best used with [Autoprefixer](https://github.com/postcss/autoprefixer) or your favorite postprocessor.
+These mixins are best used with [Autoprefixer](https://github.com/postcss/autoprefixer) or your favorite postprocessor for cross-browser compatibility.
 
 Enjoy!
