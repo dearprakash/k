@@ -13,7 +13,7 @@ When creating a class for gradient text, it is best to apply it to a `<span>` ta
 
 <iframe height='435' scrolling='no' src='//codepen.io/laurendorman/embed/ZQBYmV/?height=435&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 
-I created a [gist](https://gist.github.com/laurendorman/2af852cd1eb92c713a1c) to host those mixins along with very simple directions on how to use them.
+I created a [gist](https://gist.github.com/laurendorman/2af852cd1eb92c713a1c) to host the mixins along with simple directions on how to use them.
 
 <script src="https://gist.github.com/laurendorman/2af852cd1eb92c713a1c.js"></script>
 
