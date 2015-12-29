@@ -18,5 +18,8 @@ gem 'redcarpet'
 # Syntax Highlighting
 gem 'middleman-rouge'
 
-# Meta tags for Frontmatter
+# Metatags Middleman
 gem 'middleman-meta-tags'
+
+# Title Metatags via Frontmatter
+gem 'middleman-title'

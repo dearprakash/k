@@ -1,5 +1,6 @@
 ---
-title: Guest Post on Divshot
+title: "Guest Post on Divshot"
+description: "I was given the opportunity to help write a guest post for Sparkbox on Divshot's blog."
 date: 2015-03-10 00:00 UTC
 tags: divshot, sparkbox
 ---

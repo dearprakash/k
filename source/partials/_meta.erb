@@ -1,2 +1,6 @@
-<title><%= current_page.data.title %></title>
+<title><%= page_title %></title>
+<meta name="description" content="<%= current_page.data.description %>">
+<meta name="og:description" content="<%= current_page.data.description %>">
 <%= auto_display_meta_tags %>
+<meta name="twitter:title" content="<%= page_title %>">
+<meta name="twitter:description" content="<%= current_page.data.description %>">

@@ -1,5 +1,6 @@
 ---
-title: Tech Podcasts Featuring Diverse Voices
+title: "Tech Podcasts Featuring Diverse Voices"
+description: "A list of tech podcasts that open their doors to underrepresented groups."
 date: 2015/12/07
 tags: podcasts, diversity
 ---

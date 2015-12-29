@@ -1,5 +1,6 @@
 ---
-title: Easy Deploying with Middleman and GitHub Pages
+title: "Easy Deploying with Middleman and GitHub Pages"
+description: "An easy tutorial on deploying with Middleman and GitHub Pages."
 date: 2015/05/07
 tags: ruby on rails, middleman, github
 ---

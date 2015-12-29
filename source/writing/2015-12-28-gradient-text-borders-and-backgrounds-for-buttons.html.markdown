@@ -1,5 +1,6 @@
 ---
-title: Gradient Text, Borders and Backgrounds for Buttons
+title: "Gradient Text, Borders and Backgrounds for Buttons"
+description: "Tips and tricks on creating gradient ghost buttons and more."
 date: 2015-12-28
 tags: sass, css
 ---

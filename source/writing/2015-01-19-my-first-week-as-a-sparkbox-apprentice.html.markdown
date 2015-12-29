@@ -1,5 +1,6 @@
 ---
-title: My First Week as a Sparkbox Apprentice
+title: "My First Week as a Sparkbox Apprentice"
+description: "An overview of my first week as an Apprentice."
 date: 2015-01-19 00:00 UTC
 tags:
 ---

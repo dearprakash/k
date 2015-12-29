@@ -1,5 +1,6 @@
 ---
-title: On Good Starting Points
+title: "On Good Starting Points"
+description: "Don’t allow your search for a good starting point hold you back from starting something today."
 date: 2015-12-15 19:26 UTC
 tags:
 ---

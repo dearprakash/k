@@ -39,3 +39,5 @@ end
 
 # Meta tags
 activate :meta_tags
+
+activate :title, site: 'Lauren Dorman'
