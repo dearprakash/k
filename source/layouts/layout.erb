@@ -15,19 +15,15 @@
     
     <!-- Meta data -->
     <%= partial 'partials/meta' %>
-
-    <!-- TypeKit -->
-    <script src='//use.typekit.net/qec0yvt.js'></script>
-    <script>try{Typekit.load();}catch(e){}</script>
     
     <%= stylesheet_link_tag 'styles' %>
   </head>
   
   <body class='<%= page_classes %>'>
+    <%= partial 'partials/header' %>
     <main class='wrapper'>
-      <%= partial 'partials/header' %>
       <%= yield %>
-      <%= partial 'partials/footer' %>
     </main>
+    <%= partial 'partials/footer' %>
   </body>
 </html>

@@ -13,8 +13,8 @@
 }
 @media screen and (min-width: 480px) {
   .hero-gradient {
-    -webkit-animation: hero-gradient-loop 20s infinite;
-    animation: hero-gradient-loop 20s infinite;
+    -webkit-animation: hero-gradient-loop 15s infinite;
+    animation: hero-gradient-loop 15s infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     background-image: url(/img/background-loop.png);
