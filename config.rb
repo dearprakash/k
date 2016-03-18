@@ -11,7 +11,20 @@ set :markdown_engine, :redcarpet
 
 # Blog Configuration
 activate :blog do |blog|
+  blog.name = 'writing'
   blog.prefix = 'writing'
+  blog.permalink = '{title}'
+  blog.sources = '{year}-{month}-{day}-{title}.html'
+  blog.summary_separator = /READMORE/
+  blog.year_link = '{year}.html'
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = '{num}'
+end
+
+activate :blog do |blog|
+  blog.name = 'work'
+  blog.prefix = 'work'
   blog.permalink = '{title}'
   blog.sources = '{year}-{month}-{day}-{title}.html'
   blog.summary_separator = /READMORE/
