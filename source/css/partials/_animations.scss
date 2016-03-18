@@ -1,0 +1,64 @@
+@-webkit-keyframes mobile-background-loop {
+    0% {
+        background-color: #2878ff
+    }
+    50% {
+        background-color: #ff1643
+    }
+    100% {
+        background-color: #2878ff
+    }
+}
+@keyframes mobile-background-loop {
+    0% {
+        background-color: #2878ff
+    }
+    50% {
+        background-color: #ff1643
+    }
+    100% {
+        background-color: #2878ff
+    }
+}
+@-webkit-keyframes hero-gradient-loop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0)
+    }
+}
+@keyframes hero-gradient-loop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0)
+    }
+}
+@-webkit-keyframes hero-color-loop {
+    0% {
+        background-color: #2878ff
+    }
+    50% {
+        background-color: #ff1643
+    }
+    100% {
+        background-color: #2878ff
+    }
+}
+@keyframes hero-color-loop {
+    0% {
+        background-color: #2878ff
+    }
+    50% {
+        background-color: #ff1643
+    }
+    100% {
+        background-color: #2878ff
+    }
+}

@@ -18,7 +18,7 @@ $ git checkout -b dev
 Update your `Gemfile` to include:
 
 ```ruby
-gem 'middleman-deploy', '~> 1.0'
+gem 'middleman-deploy', '2.0.0.pre.alpha'
 ```
 
 Then run `$ bundle install` to see to it that the gem is installed.
@@ -29,9 +29,11 @@ Once you've successfully installed the `middleman-deploy` gem, activate deployin
 ```ruby
 activate :deploy do |deploy|
   deploy.build_before = true # runs build before deploying
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch = 'master'
 end
 ```
 
-Running `$ middleman deploy` will build and push your build to the `master` branch of your repository, where it will then be live for production.
+Running `$ middleman deploy` will build and push to the `master` branch of your repository, where it will then be live in production.
+
+Updated on <time>March 18th, 2016</time> to reflect latest `middleman-deploy` version in parity with Middleman v4, plus updated syntax.
