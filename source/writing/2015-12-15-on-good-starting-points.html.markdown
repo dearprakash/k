@@ -1,5 +1,6 @@
 ---
 title: On Good Starting Points
+blog: 'writing'
 date: 2015-12-15 19:26 UTC
 tags:
 ---

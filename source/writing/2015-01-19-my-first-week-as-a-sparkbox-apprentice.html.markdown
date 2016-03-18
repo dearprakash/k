@@ -1,5 +1,6 @@
 ---
 title: My First Week as a Sparkbox Apprentice
+blog: 'writing'
 date: 2015-01-19 00:00 UTC
 tags:
 ---

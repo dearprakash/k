@@ -4,7 +4,7 @@ paginate: true
 per_page: 3
 ---
 
-<% blog.articles.each do |article| %>
+<% blog('writing').articles.each do |article| %>
   <article>
 
     <%= article.body %>

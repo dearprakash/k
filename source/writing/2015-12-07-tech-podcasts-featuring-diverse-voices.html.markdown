@@ -1,5 +1,6 @@
 ---
 title: Tech Podcasts Featuring Diverse Voices
+blog: 'writing'
 date: 2015/12/07
 tags: podcasts, diversity
 ---

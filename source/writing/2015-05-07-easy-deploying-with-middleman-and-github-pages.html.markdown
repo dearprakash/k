@@ -1,5 +1,6 @@
 ---
 title: Easy Deploying with Middleman and GitHub Pages
+blog: 'writing'
 date: 2015/05/07
 tags: ruby on rails, middleman, github
 ---

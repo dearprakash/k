@@ -1,5 +1,6 @@
 ---
 title: Guest Post on Divshot
+blog: 'writing'
 date: 2015-03-10 00:00 UTC
 tags: divshot, sparkbox
 ---
