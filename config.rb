@@ -27,7 +27,6 @@ page "/feed.xml", layout: false
 
 # Build-specific Configuration
 configure :build do
-  activate :minify_css
   activate :minify_javascript
 end
 

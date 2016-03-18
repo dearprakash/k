@@ -1,64 +1,49 @@
-@-webkit-keyframes mobile-background-loop {
-    0% {
-        background-color: #2878ff
-    }
-    50% {
-        background-color: #ff1643
-    }
-    100% {
-        background-color: #2878ff
-    }
+@mixin keyframes($animation) {
+  @-webkit-keyframes #{$animation} {
+    @content;
+  }
+  @-moz-keyframes #{$animation} {
+    @content;
+  }
+  @-o-keyframes #{$animation} {
+    @content;
+  }
+  @keyframes #{$animation} {
+    @content;
+  }
 }
-@keyframes mobile-background-loop {
-    0% {
-        background-color: #2878ff
-    }
-    50% {
-        background-color: #ff1643
-    }
-    100% {
-        background-color: #2878ff
-    }
+
+@include keyframes(mobile-background-loop) {
+  0% {
+    background-color: $primary-color;
+  }
+  50% {
+    background-color: $middle-ground-color;
+  }
+  100% {
+    background-color: $secondary-color;
+  }
 }
-@-webkit-keyframes hero-gradient-loop {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0)
-    }
-    100% {
-        -webkit-transform: translate3d(0, -50%, 0);
-        transform: translate3d(0, -50%, 0)
-    }
+
+@include keyframes(hero-gradient-loop) {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  100% {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0)
+  }
 }
-@keyframes hero-gradient-loop {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0)
-    }
-    100% {
-        -webkit-transform: translate3d(0, -50%, 0);
-        transform: translate3d(0, -50%, 0)
-    }
-}
-@-webkit-keyframes hero-color-loop {
-    0% {
-        background-color: #2878ff
-    }
-    50% {
-        background-color: #ff1643
-    }
-    100% {
-        background-color: #2878ff
-    }
-}
-@keyframes hero-color-loop {
-    0% {
-        background-color: #2878ff
-    }
-    50% {
-        background-color: #ff1643
-    }
-    100% {
-        background-color: #2878ff
-    }
+
+@include keyframes(hero-color-loop) {
+  0% {
+    background-color: $primary-color;
+  }
+  50% {
+    background-color: $middle-ground-color;
+  }
+  100% {
+    background-color: $secondary-color;
+  }
 }

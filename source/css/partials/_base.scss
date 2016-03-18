@@ -24,23 +24,23 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-    body {
-        padding: 0 20px
-    }
+  body {
+    padding: 0 20px
+  }
 }
 @media screen and (min-width: 480px) {
-    body {
-        -webkit-animation: none;
-        animation: none;
-        background-color: transparent
-    }
+  body {
+    -webkit-animation: none;
+    animation: none;
+    background-color: transparent;
+  }
 }
 @media screen and (min-width: 320px) {
-    .touch body {
-        -webkit-animation: mobile-background-loop 20s infinite;
-        animation: mobile-background-loop 20s infinite;
-        will-change: background-color
-    }
+  .touch body {
+    -webkit-animation: mobile-background-loop 20s infinite;
+    animation: mobile-background-loop 20s infinite;
+    will-change: background-color;
+  }
 }
 
 button, input, select, textarea {

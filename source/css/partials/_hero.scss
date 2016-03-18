@@ -1,0 +1,37 @@
+.hero-gradient {
+  display: none;
+  height: 400%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1
+}
+.hero-gradient-safari-flicker {
+  display: none
+}
+@media screen and (min-width: 480px) {
+  .hero-gradient {
+    -webkit-animation: hero-gradient-loop 20s infinite;
+    animation: hero-gradient-loop 20s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background-image: url(/img/background-loop.png);
+    background-size: 100% 100%;
+    display: block;
+    height: 1000%;
+    position: fixed
+  }
+  .hero-gradient-safari-flicker {
+    background-image: url(/img/background-loop.png);
+    background-size: 100% 100%;
+    display: block;
+    height: 1000%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2
+  }
+}
