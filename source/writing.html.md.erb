@@ -1,0 +1,13 @@
+---
+title: Writing
+paginate: true
+per_page: 3
+---
+
+<% blog('writing').articles.each do |article| %>
+  <article>
+
+    <%= article.body %>
+
+  </article>
+<% end %>

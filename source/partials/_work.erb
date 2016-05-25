@@ -1,0 +1,6 @@
+<h2 class='section__title uppercase'>Work</h2>
+<ul class='main-content__list'>
+  <% data.work.each do |item| %>
+  <li><%= link_to item.project.title, item.project.url %></li>
+  <% end %>
+</ul>

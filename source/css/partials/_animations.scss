@@ -1,0 +1,49 @@
+@mixin keyframes($animation) {
+  @-webkit-keyframes #{$animation} {
+    @content;
+  }
+  @-moz-keyframes #{$animation} {
+    @content;
+  }
+  @-o-keyframes #{$animation} {
+    @content;
+  }
+  @keyframes #{$animation} {
+    @content;
+  }
+}
+
+@include keyframes(mobile-background-loop) {
+  0% {
+    background-color: $primary-color;
+  }
+  50% {
+    background-color: $middle-ground-color;
+  }
+  100% {
+    background-color: $secondary-color;
+  }
+}
+
+@include keyframes(hero-gradient-loop) {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  100% {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0)
+  }
+}
+
+@include keyframes(hero-color-loop) {
+  0% {
+    background-color: $primary-color;
+  }
+  50% {
+    background-color: $middle-ground-color;
+  }
+  100% {
+    background-color: $secondary-color;
+  }
+}

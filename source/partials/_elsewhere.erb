@@ -1,0 +1,6 @@
+<h2 class='section__title uppercase'>Elsewhere</h2>
+<ul class='main-content__list'>
+  <% data.elsewhere.each do |item| %>
+  <li><%= link_to item.elsewhere.title, item.elsewhere.url %></a></li>
+  <% end %>
+</ul>

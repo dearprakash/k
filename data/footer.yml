@@ -1,0 +1,12 @@
+personal_site:
+  url: /
+  text: Lauren Dorman
+site_source:
+  url: https://github.com/laurendorman/laurendorman.github.io/tree/dev
+  text: Source
+style_guide:
+  url: /style-guide
+  text: Style Guide
+colophon:
+  url: /colophon
+  text: Colophon

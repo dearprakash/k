@@ -1,0 +1,18 @@
+.main-content__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Buttons */
+.btn--primary {
+  background-image: linear-gradient(to right, #5b3c70, #e57b5d);
+  border: 0;
+  padding: .4rem .75rem;
+  outline: none;
+  margin-bottom: 1em;
+}
+.btn__text {
+  color: $white;
+  text-decoration: none;
+  font-size: 1rem;
+}
