@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Writing | Lauren Dorman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Writing">
+<meta property="og:url" content="https://laurendorman.io/tags/css/index.html">
+<meta property="og:site_name" content="Lauren Dorman">
+<meta property="og:description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Writing">
+<meta name="twitter:description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable.">
+  <meta name="twitter:image" content="https://laurendorman.io/twitter_summary_card@2x.png" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <meta name="apple-mobile-web-app-title" content="Lauren Dorman">
+  <meta name="application-name" content="Lauren Dorman">
+  <meta name="msapplication-TileColor" content="#5b3c70">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+  <a href="/" alt="Lauren Dorman">
+    <svg id="logo" height="31px" width="35px">
+      <path id="LD" fill="#FFFFFF" d="M22.9,0.8 L13.4,0.8 L13.4,19.3 L21.5,19.3 L21.5,8.4 L22.9,8.4 C25.3,8.4 26.3,10.6 26.3,17.3 C26.3,20.1 26,23.5 22.9,23.5 L8.7,23.5 L8.7,0.7 L0,0.7 L0,31 L23,31 C32,31 35,22.6 35,17.2 C34.8,8.1 31.9,0.8 22.9,0.8 L22.9,0.8 Z"/>
+    </svg>
+  </a>
+  <button id="menu-icon" type="button" class="menu-btn">Menu</button>
+  <div id="menu" class="menu__overlay menu__overlay-slidedown">
+      <nav>
+        <ul>
+        
+        <li><a href="/" alt="Home">Home</a></li>
+        
+        <li><a href="/about" alt="About">About</a></li>
+        
+        <li><a href="/writing" alt="Writing">Writing</a></li>
+        
+        <li><a href="/work" alt="Work">Work</a></li>
+        
+        </ul>
+      </nav>
+  </div>
+</header>
+  <div class="hero-gradient"></div>
+    <section class="hero-gradient__container">
+      <section class="hero__container">
+	<h1 class="hero--title">Writing</h1>
+</section>
+    </section>
+    <main class='content-wrapper full'>
+      
+
+  
+  <article class="post" itemscope itemprop="blogPost">
+  
+    <h1>
+      <a href="/writing/gradient-text-borders-and-backgrounds-for-buttons/" class="post--title" itemprop="name">Gradient Text, Borders and Backgrounds for Buttons</a>
+    </h1>
+  
+  <time datetime="2015-12-28T05:00:00.000Z">December 28th, 2015</time>
+  <p>Working with <a href="https://twitter.com/trillectro">Trillectro</a> has resulted in the use of <strong>a lot</strong> of gradients. After exploring a few different button styles, I came up with a good solution for gradient ghost buttons with gradient text. To make my life easier, I created a couple of Sass mixins that would allow me to reuse those styles throughout the project when needed.</p>
+<p>When creating a class for gradient text, it is best to apply it to a <code>&lt;span&gt;</code> tag so that the gradient is clipped only to the text itself. The <a href="http://codepen.io/laurendorman/pen/ZQBYmV">pen</a> below shows how those styles are used.</p>
+<iframe height='435' scrolling='no' src='//codepen.io/laurendorman/embed/ZQBYmV/?height=435&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+
+<p>I created a <a href="https://gist.github.com/laurendorman/2af852cd1eb92c713a1c">gist</a> to host the mixins along with simple directions on how to use them.</p>
+<script src="https://gist.github.com/laurendorman/2af852cd1eb92c713a1c.js"></script>
+
+<p>These mixins are best used with <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> or your favorite postprocessor for cross-browser compatibility.</p>
+<p>Enjoy!</p>
+
+</article>
+  
+  <nav class="pagination">
+    
+    
+  </nav>
+
+    </main>
+    <footer id="footer">
+  <p class='footer__text'>&copy; 2016 &middot; Packaged with care.</p>
+  <ul class="footer__nav">
+  	<li><a href="https://github.com/laurendorman/laurendorman.github.io/tree/dev" alt="Source code for laurendorman.io">Source</a></li>
+  	<li><a href="/style-guide" alt="Code style guide by Lauren Dorman">Style Guide</a></li>
+  	<li><a href="/colophon" alt="Colophon for laurendorman.io">Colophon</a></li>
+  </ul>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="/vendor/emoji.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Writing | Lauren Dorman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Writing">
+<meta property="og:url" content="https://laurendorman.io/tags/ruby-on-rails/index.html">
+<meta property="og:site_name" content="Lauren Dorman">
+<meta property="og:description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Writing">
+<meta name="twitter:description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable.">
+  <meta name="twitter:image" content="https://laurendorman.io/twitter_summary_card@2x.png" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <meta name="apple-mobile-web-app-title" content="Lauren Dorman">
+  <meta name="application-name" content="Lauren Dorman">
+  <meta name="msapplication-TileColor" content="#5b3c70">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+  <a href="/" alt="Lauren Dorman">
+    <svg id="logo" height="31px" width="35px">
+      <path id="LD" fill="#FFFFFF" d="M22.9,0.8 L13.4,0.8 L13.4,19.3 L21.5,19.3 L21.5,8.4 L22.9,8.4 C25.3,8.4 26.3,10.6 26.3,17.3 C26.3,20.1 26,23.5 22.9,23.5 L8.7,23.5 L8.7,0.7 L0,0.7 L0,31 L23,31 C32,31 35,22.6 35,17.2 C34.8,8.1 31.9,0.8 22.9,0.8 L22.9,0.8 Z"/>
+    </svg>
+  </a>
+  <button id="menu-icon" type="button" class="menu-btn">Menu</button>
+  <div id="menu" class="menu__overlay menu__overlay-slidedown">
+      <nav>
+        <ul>
+        
+        <li><a href="/" alt="Home">Home</a></li>
+        
+        <li><a href="/about" alt="About">About</a></li>
+        
+        <li><a href="/writing" alt="Writing">Writing</a></li>
+        
+        <li><a href="/work" alt="Work">Work</a></li>
+        
+        </ul>
+      </nav>
+  </div>
+</header>
+  <div class="hero-gradient"></div>
+    <section class="hero-gradient__container">
+      <section class="hero__container">
+	<h1 class="hero--title">Writing</h1>
+</section>
+    </section>
+    <main class='content-wrapper full'>
+      
+
+  
+  <article class="post" itemscope itemprop="blogPost">
+  
+    <h1>
+      <a href="/writing/easy-deploying-with-middleman-and-github-pages/" class="post--title" itemprop="name">Easy Deploying with Middleman and GitHub Pages</a>
+    </h1>
+  
+  <time datetime="2015-05-07T04:00:00.000Z">May 7th, 2015</time>
+  <p>I wanted easy way to deploy Middleman’s static files to GitHub Pages – all while keeping the source available, without having to manage multiple repositories.</p>
+<p>Create a <code>dev</code> branch in your repository, this is where your <code>source</code> files will be housed and will serve as your working/development branch.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b dev</span><br></pre></td></tr></table></figure>
+<p>Update your <code>Gemfile</code> to include:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem <span class="string">'middleman-deploy'</span>, <span class="string">'2.0.0.pre.alpha'</span></span><br></pre></td></tr></table></figure>
+<p>Then run <code>$ bundle install</code> to see to it that the gem is installed.</p>
+<p>Once you’ve successfully installed the <code>middleman-deploy</code> gem, activate deploying in your <code>config.rb</code> file:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">activate <span class="symbol">:deploy</span> <span class="keyword">do</span> <span class="params">|deploy|</span></span><br><span class="line">  deploy.build_before = <span class="literal">true</span> <span class="comment"># runs build before deploying</span></span><br><span class="line">  deploy.deploy_method = <span class="symbol">:git</span></span><br><span class="line">  deploy.branch = <span class="string">'master'</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>Running <code>$ middleman deploy</code> will build and push to the <code>master</code> branch of your repository, where it will then be live in production.</p>
+<p><strong>Updated</strong> on March 18th, 2016 to reflect latest <code>middleman-deploy</code> version in parity with Middleman v4, plus updated syntax.</p>
+
+</article>
+  
+  <nav class="pagination">
+    
+    
+  </nav>
+
+    </main>
+    <footer id="footer">
+  <p class='footer__text'>&copy; 2016 &middot; Packaged with care.</p>
+  <ul class="footer__nav">
+  	<li><a href="https://github.com/laurendorman/laurendorman.github.io/tree/dev" alt="Source code for laurendorman.io">Source</a></li>
+  	<li><a href="/style-guide" alt="Code style guide by Lauren Dorman">Style Guide</a></li>
+  	<li><a href="/colophon" alt="Colophon for laurendorman.io">Colophon</a></li>
+  </ul>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="/vendor/emoji.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+</body>
+</html>

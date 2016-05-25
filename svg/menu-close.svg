@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:silver;}
+</style>
+<g>
+	<rect x="15" y="136.5" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 362.132 150)" class="st0" width="270" height="27"/>
+	<rect x="15" y="136.5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 150 -62.132)" class="st0" width="270" height="27"/>
+</g>
+</svg>

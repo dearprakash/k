@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Style Guide | Lauren Dorman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A code style guide for front-end development.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Style Guide">
+<meta property="og:url" content="https://laurendorman.io/style-guide/index.html">
+<meta property="og:site_name" content="Lauren Dorman">
+<meta property="og:description" content="A code style guide for front-end development.">
+<meta property="og:updated_time" content="2016-05-06T19:59:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Style Guide">
+<meta name="twitter:description" content="A code style guide for front-end development.">
+  <meta name="twitter:image" content="https://laurendorman.io/twitter_summary_card@2x.png" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <meta name="apple-mobile-web-app-title" content="Lauren Dorman">
+  <meta name="application-name" content="Lauren Dorman">
+  <meta name="msapplication-TileColor" content="#5b3c70">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+  <a href="/" alt="Lauren Dorman">
+    <svg id="logo" height="31px" width="35px">
+      <path id="LD" fill="#FFFFFF" d="M22.9,0.8 L13.4,0.8 L13.4,19.3 L21.5,19.3 L21.5,8.4 L22.9,8.4 C25.3,8.4 26.3,10.6 26.3,17.3 C26.3,20.1 26,23.5 22.9,23.5 L8.7,23.5 L8.7,0.7 L0,0.7 L0,31 L23,31 C32,31 35,22.6 35,17.2 C34.8,8.1 31.9,0.8 22.9,0.8 L22.9,0.8 Z"/>
+    </svg>
+  </a>
+  <button id="menu-icon" type="button" class="menu-btn">Menu</button>
+  <div id="menu" class="menu__overlay menu__overlay-slidedown">
+      <nav>
+        <ul>
+        
+        <li><a href="/" alt="Home">Home</a></li>
+        
+        <li><a href="/about" alt="About">About</a></li>
+        
+        <li><a href="/writing" alt="Writing">Writing</a></li>
+        
+        <li><a href="/work" alt="Work">Work</a></li>
+        
+        </ul>
+      </nav>
+  </div>
+</header>
+  <div class="hero-gradient"></div>
+    <section class="hero-gradient__container">
+      <section class="hero__container">
+	<h1 class="hero--title">Style Guide</h1>
+</section>
+    </section>
+    <main class='content-wrapper full'>
+      <h1 id="Style-Guide"><a href="#Style-Guide" class="headerlink" title="Style Guide"></a>Style Guide</h1><p>This Style Guide is serves as a very opinionated and intentional guide to how I develop websites, covering my approach to writing HTML, Sass, CSS and the likes.</p>
+<h2 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h2><ol>
+<li><a href="#html5">HTML5</a><ol>
+<li><a href="#doctype">Doctype</a></li>
+<li><a href="#writing-html-syntax">Writing HTML Syntax</a></li>
+<li><a href="#spacing">Spacing</a></li>
+<li><a href="#urls">URLs</a></li>
+</ol>
+</li>
+<li><a href="#sass">Sass</a><ol>
+<li><a href="#variables">Variables</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#mixins">Mixins</a></li>
+<li><a href="#nesting">Nesting</a></li>
+<li><a href="#class-names">Class Names</a></li>
+</ol>
+</li>
+<li><a href="#css">CSS</a><ol>
+<li><a href="#writing-css-syntax">Writing CSS Syntax</a></li>
+<li><a href="#properties-and-values">Properties and Values</a></li>
+<li><a href="#browser-prefixes">Browser Prefixes</a></li>
+<li><a href="#selectors">Selectors</a></li>
+<li><a href="#pseudo-elements-and-pseudo-classes">Pseudo-elements and Pseudo-classes</a></li>
+</ol>
+</li>
+<li><a href="#inspiration">Inspiration</a></li>
+</ol>
+<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a><a name='html5'></a>HTML5</h2><p>The use of HTML5 should strictly follow the <a href="http://www.w3.org/TR/html5/">HTML5 W3 Specifications</a>. For browser support, use <a href="http://caniuse.com/#cats=HTML5">CanIUse</a>.</p>
+<h3 id="Doctype"><a href="#Doctype" class="headerlink" title="Doctype"></a><a name='doctype'></a>Doctype</h3><p>Enforce standards mode and more consistent rendering in every browser by declaring the HTML5 Doctype at the beginning of every HTML page.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Writing-HTML-Syntax"><a href="#Writing-HTML-Syntax" class="headerlink" title="Writing HTML Syntax"></a><a name='writing-html-syntax'></a>Writing HTML Syntax</h3><ul>
+<li>Use a soft tab (two spaces), so that the HTML is rendered the same across browsers.</li>
+<li>Nested elements should be indented once per level.</li>
+<li>When an attribute requires it, use single quotes unless for content.</li>
+<li>Use lowercase and dashes, not underscore or camelCase.</li>
+<li>Do not include trailing slash in self-closing elements.</li>
+</ul>
+<h3 id="Spacing"><a href="#Spacing" class="headerlink" title="Spacing"></a><a name='spacing'></a>Spacing</h3><p>Large sections of HTML should be separated by a one line break for readability.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">  <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">  <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="URLs"><a href="#URLs" class="headerlink" title="URLs"></a><a name='urls'></a>URLs</h3><p>Use relative URLs whenever possible; this will prevent problems if the base URL ever changes during a project’s lifespan.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">'/about'</span>&gt;</span>About<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Sass"><a href="#Sass" class="headerlink" title="Sass"></a><a name='sass'></a>Sass</h2><p><a href="http://sass-lang.com/">Sass</a> is my preferred choice for CSS preprocessing, it allows the author to add variables, nesting, functions, and mixins to their stylesheets. This document uses Sass syntax.</p>
+<h3 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a><a name='variables'></a>Variables</h3><p>Write global variables just as you would a CSS declaration, but optionally include one line break and comments between related variables for grouping and readability.</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Colors */</span></span><br><span class="line"><span class="variable">$c--primary</span>: <span class="number">#5B3C70</span>;</span><br><span class="line"><span class="variable">$c--secondary</span>: <span class="number">#E57B5D</span>;</span><br><span class="line"><span class="variable">$c--primary-text</span>: <span class="number">#0d0d0d</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Typography */</span></span><br><span class="line"><span class="variable">$font-stack</span>: <span class="string">'proxima-nova'</span>, Helvetica, sans-serif;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Base Styles */</span></span><br><span class="line"><span class="variable">$base-margin</span>: <span class="number">2rem</span>;</span><br><span class="line"><span class="variable">$base-padding</span>: <span class="number">1rem</span>;</span><br><span class="line"><span class="variable">$base-border</span>: <span class="number">0.25rem</span> solid;</span><br><span class="line"><span class="variable">$base-border-radius</span>: <span class="number">0.125rem</span>;</span><br></pre></td></tr></table></figure>
+<p>When writing local variables, include them as you would a CSS declaration, but always declare them before usage.</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.example</span> &#123;</span><br><span class="line">  <span class="variable">$base</span>: <span class="number">2em</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="variable">$base</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$base</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="variable">$base</span>/<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>It is a best practice to include your variables in a separate stylesheet (partial) titled <code>_variables.scss</code> and import that stylesheet into your main <code>style.scss</code> stylesheet where your Sass sources are being compiled.</p>
+<p>When importing, do not include the <code>.scss</code> file extension or prepending underscore.</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">'utilities/variables'</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a><a name='functions'></a>Functions</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Documentation in progress.</span><br></pre></td></tr></table></figure>
+<h3 id="Mixins"><a href="#Mixins" class="headerlink" title="Mixins"></a><a name='mixins'></a>Mixins</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Documentation in progress.</span><br></pre></td></tr></table></figure>
+<h3 id="Nesting"><a href="#Nesting" class="headerlink" title="Nesting"></a><a name='nesting'></a>Nesting</h3><p>Avoid nesting too deeply Sass for the sake of it. Things can get pretty ugly, pretty quickly.</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.content__list</span> &#123;</span><br><span class="line">  <span class="selector-tag">ul</span> &#123;</span><br><span class="line">    <span class="selector-tag">li</span> &#123;</span><br><span class="line">      <span class="selector-tag">a</span> &#123;</span><br><span class="line">        &amp;:hover &#123;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The result will not be good.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.content__list &#123; ... &#125;</span><br><span class="line">.content__list ul &#123; ... &#125;</span><br><span class="line">.content__list ul li &#123; ... &#125;</span><br><span class="line">.content__list ul li a &#123; ... &#125;</span><br><span class="line">.content__list ul li a:hover &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Class-Names"><a href="#Class-Names" class="headerlink" title="Class Names"></a><a name='class-names'></a>Class Names</h3><ul>
+<li>Use the BEM (block, element, modifier) methodology for naming things, i.e., <code>btn__text--sold-out</code>.</li>
+<li>Be specific when naming classes. Use meaningful names that describe the action or functionality of a class rather than is appearance, i.e., <code>.btn--danger</code> instead of <code>.btn--red</code>.</li>
+<li>Abbreviate some class names, but make sure anyone can understand the class, i.e., <code>.cta</code> instead of <code>.call-to-action</code>.</li>
+<li>Prefix classes based on the closest parent element or base class.</li>
+</ul>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a><a name='css'></a>CSS</h2><p>The use of CSS should strictly follow the <a href="http://www.w3.org/TR/CSS/">CSS W3 Specifications</a> for CSS properties and values. For browser support, use <a href="http://caniuse.com/#cats=CSS">CanIUse</a>.</p>
+<h3 id="Writing-CSS-Syntax"><a href="#Writing-CSS-Syntax" class="headerlink" title="Writing CSS Syntax"></a><a name='writing-css-syntax'></a>Writing CSS Syntax</h3><ul>
+<li>For readability, use a soft tab (two spaces).</li>
+<li>Nested elements (in Sass) should be indented with a soft tab.</li>
+<li>Include one space after the <code>:</code> for each declaration.</li>
+<li>Each individual declaration should be written on its own line and indented with a soft tab.</li>
+<li>End each declaration with a semi-colon.</li>
+</ul>
+<h3 id="Properties-and-Values"><a href="#Properties-and-Values" class="headerlink" title="Properties and Values"></a><a name='properties-and-values'></a>Properties and Values</h3><ul>
+<li>Avoid specifying units for zero values, i.e., <code>margin: 0;</code> instead of <code>margin: 0px</code>;</li>
+<li>Use shorthand whenever possible, i.e., <code>font</code> instead of <code>font-size</code> and <code>font-family</code> – be very intentional with typography.</li>
+<li>Use <code>!important</code> when necessary, but this should be avoided.</li>
+<li>Use single quotes and never double quotes.</li>
+<li>Stay consistent with units, i.e., do not use a mixture of <code>rem</code> and <code>px</code> for typography, unless for browser support where a <code>rem</code> fall back is needed.</li>
+</ul>
+<h3 id="Browser-Prefixes"><a href="#Browser-Prefixes" class="headerlink" title="Browser Prefixes"></a><a name='browser-prefixes'></a>Browser Prefixes</h3><p>Figuring out which properties require browser prefixes is a hefty task, but <a href="http://caniuse.com">CanIUse</a> provides information about browser support and which properties require prefixes. I recommend using <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> if you are comfortable using a task runner.</p>
+<h3 id="Selectors"><a href="#Selectors" class="headerlink" title="Selectors"></a><a name='selectors'></a>Selectors</h3><ul>
+<li>Class selectors should be used before ID selectors.</li>
+<li>The universal <code>*</code> selector should be avoided at all costs.</li>
+<li>Avoid the use of multiple type selectors (also known as descendant selectors) whenever possible, i.e., <code>ul li a</code>.</li>
+<li>If selectors use the same declarations, group them together, i.e., <code>h1, h2, h3, h4, h5, h6 { ... }</code>.</li>
+</ul>
+<h3 id="Pseudo-elements-and-Pseudo-classes"><a href="#Pseudo-elements-and-Pseudo-classes" class="headerlink" title="Pseudo-elements and Pseudo-classes"></a><a name='pseudo-elements-and-pseudo-classes'></a>Pseudo-elements and Pseudo-classes</h3><p>When grouping pseudo-elements and classes with other selectors, include after the element they affect.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a &#123; ... &#125;</span><br><span class="line">a:hover &#123; ... &#125;</span><br><span class="line">a:visited &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+<p>Always declare the pseudo-elements <code>:before</code> first and <code>:after</code> following, but they should always come after element they affect. It is also best practice to include <code>content</code> property first.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">h1 &#123; ... &#125;</span><br><span class="line">h1:before &#123; ... &#125;</span><br><span class="line">h1:after &#123;</span><br><span class="line">  content: ' - See below';</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>When combining pseudo-classes, use two colons for the second class, i.e., <code>h1:after::hover</code>.</p>
+<h2 id="Inspiration"><a href="#Inspiration" class="headerlink" title="Inspiration"></a><a name='inspiration'></a>Inspiration</h2><p>This document is inspired by my personal writing style, <a href="http://codeguide.co/">Code Guide by @mdo</a>, <a href="https://github.com/google/styleguide">Google’s Styleguide</a>, and <a href="http://cssguidelin.es/">CSS Guidelines</a>.</p>
+
+    </main>
+    <footer id="footer">
+  <p class='footer__text'>&copy; 2016 &middot; Packaged with care.</p>
+  <ul class="footer__nav">
+  	<li><a href="https://github.com/laurendorman/laurendorman.github.io/tree/dev" alt="Source code for laurendorman.io">Source</a></li>
+  	<li><a href="/style-guide" alt="Code style guide by Lauren Dorman">Style Guide</a></li>
+  	<li><a href="/colophon" alt="Colophon for laurendorman.io">Colophon</a></li>
+  </ul>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="/vendor/emoji.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+</body>
+</html>
