@@ -1,0 +1,4 @@
+<h1>Hello there, I'm Lauren.</h1>
+<p>I'm a Front-End Developer and Designer. I build things that are modular, reusable and equipped with subtle animations and exciting color palettes 🎨. I am passionate about making the web both beautiful and useable. I am most happy when solving problems and facing new challenges.</p>
+
+<p>Currently, I live and work in the wonderful city of Columbus, Ohio. And when my eyes aren't glued to the screen, I enjoy cycling 🚴, attending concerts 🎤 and creating magic with my <a href="https://twitter.com/LaurenDorman/status/697590183559036928" alt="Ableton Push 2">Push 2</a>.</p>

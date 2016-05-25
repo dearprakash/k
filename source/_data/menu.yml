@@ -1,0 +1,12 @@
+- item:
+  title: Home
+  url: /
+- item:
+  title: About
+  url: /about
+- item:
+  title: Writing
+  url: /writing
+- item:
+  title: Work
+  url: /work

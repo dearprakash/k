@@ -1,0 +1,30 @@
+- project:
+  title: Trillectro
+  url: /work/trillectro
+  tags: 'Development, Design'
+  svg: /svg/trillectro.svg
+  class: trillectro
+- project:
+  title: Style Guide
+  url: /style-guide
+  tags: 'Documentation'
+  svg: /svg/style-guide.svg
+  class: style-guide
+- project:
+  title: Wright-Patt's myCUmortgage
+  url: /work/mycumortgage
+  tags: 'Development'
+  svg: /svg/mycumortgage.svg
+  class: mycumortgage
+- project:
+  title: Hoist
+  url: /work/hoist
+  tags: 'Design'
+  svg: /svg/hoist.svg
+  class: hoist
+- project:
+  title: Apprentice.at
+  url: /work/apprentice-at
+  tags: 'Development'
+  svg: /svg/apprentice-at.svg
+  class: apprentice-at

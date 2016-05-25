@@ -1,0 +1,86 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Lauren Dorman
+subtitle: My mom thinks I make cool shit and tells all of her friends on Facebook.
+description: I'm a designer and front-end developer who is passionate about making the web both beautiful and usable.
+author: Lauren Dorman
+language: en
+timezone: America/New_York
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://laurendorman.io
+root: /
+permalink: writing/:title/
+archive_dir: writing
+
+# Directory
+source_dir: source
+public_dir: build
+tag_dir: tags
+category_dir: categories
+code_dir: downloads/code
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: layout
+titlecase: false # Transform title into titlecase
+external_link: false # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: 'MMMM Do, YYYY'
+time_format: HH:mm
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 0
+pagination_dir: /
+
+# Pagination disabling
+archive: 2
+category: 0
+tag: 0
+
+# Extensions
+theme: laurendorman.io
+exclude_generator:
+- archive
+
+blog_generator:
+  path: writing
+  per_page: 3
+  order_by: -date
+
+# Sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/laurendorman/laurendorman.github.io
+  branch: master

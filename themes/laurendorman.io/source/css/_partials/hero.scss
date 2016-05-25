@@ -1,0 +1,93 @@
+.hero-gradient {
+  display: none;
+  height: 400%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  &__container {
+    max-width: $max-width;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.hero-gradient-safari {
+  display: none
+}
+@media screen and (min-width: $sm) {
+  .hero-gradient {
+    -webkit-animation: hero-gradient-loop 15s infinite;
+    animation: hero-gradient-loop 15s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background-image: url('/img/background-loop.png');
+    background-image: linear-gradient($primary-color, $secondary-color, $primary-color, $secondary-color, $primary-color);
+    background-size: 100% 100%;
+    display: block;
+    height: 1000%;
+    position: fixed;
+  }
+  .hero-gradient-safari {
+    background-image: url('/img/background-loop.png');
+    background-image: linear-gradient($primary-color, $secondary-color, $primary-color, $secondary-color, $primary-color);
+    background-size: 100% 100%;
+    display: block;
+    height: 1000%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+}
+
+.hero {
+  &__container {
+    max-width: $max-width;
+    display: block;
+  }
+  &--title {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: $white;
+    padding: 1rem;
+    &:after {
+      background-color: $white;
+      top: 20px;
+      content: '';
+      display: block;
+      height: 5px;
+      left: 0;
+      position: relative;
+      width: 50px;
+      -webkit-animation: blink 1s 4;
+      animation: blink 1s 4;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+    }
+    &:hover:after {
+      -webkit-animation: blink 1s infinite;
+      animation: blink 1s infinite;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .hero {
+    &__container {
+    margin: 10rem 6rem 6rem;
+    max-width: $max-width;
+    display: block;
+  }
+    &--title {
+      font-size: 3.5rem;
+      padding-top: 6rem;
+      padding-bottom: 2rem;
+        &:after {
+          left: -30px;
+      }
+    }
+  }
+}

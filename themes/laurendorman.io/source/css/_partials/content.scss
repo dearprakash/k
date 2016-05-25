@@ -1,0 +1,67 @@
+.content-wrapper {
+  background-color: $white;
+  padding: 20px;
+  max-width: $max-width;
+  margin: 0 auto;
+  display: block;
+  @media screen and (min-width: $md) {
+    padding: 5em;
+  }
+
+  a {
+    border-bottom: 3px solid lighten($secondary-color, 15%);
+    &:hover {
+      border-bottom: 3px solid $secondary-color;
+      transition: all .4s ease-in-out;
+    }
+    &.post--title {
+      border-bottom: 0;
+      color: $primary-color;
+      &:hover {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+main {
+  ol {
+    margin-left: .75em;
+  }
+  ul {
+    padding-left: 30px;
+  }
+  ul li {
+    &::before {
+      content: '—';
+      color: lighten($light-gray-text, 20%);
+      position: absolute;
+      margin-left: -30px;
+    }
+  }
+}
+
+#writing {
+  ol {
+    list-style: none;
+    padding-left: 30px;
+    margin-left: 0;
+  }
+  ol li {
+    &::before {
+      content: '—';
+      color: lighten($light-gray-text, 20%);
+      position: absolute;
+      margin-left: -30px;
+    }
+  }
+}
+
+.post {
+  padding-bottom: 4em;
+}
+
+.pagination {
+  display: inline-block;
+  width: 100%;
+}

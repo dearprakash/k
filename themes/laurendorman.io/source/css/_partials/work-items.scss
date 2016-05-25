@@ -1,0 +1,62 @@
+.work-item {
+  height: 250px;
+  padding: 15px;
+  margin: 1em 0;
+  position: relative;
+  @extend .full;
+  &__title {
+    font-size: 1.5em;
+    color: $white;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1;
+  }
+  &__cta {
+    bottom: 0px;
+    left: 15px;
+    position: absolute; 
+    @media screen and (min-width: $md) {
+      bottom: 15px;
+      left: 30px;
+    }
+  }
+  @media screen and (min-width: $md) {
+    padding: 30px;
+    width: 47%;
+    *width: 47%;
+    &:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: $lg) {
+    padding: 30px;
+    width: 48.3%;
+    *width: 48.3%;
+    &:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.trillectro__block {
+  background-color: #e93d78;
+}
+.style-guide__block  {
+  background-color: $primary-color;
+}
+.mycumortgage__block {
+  background-color: #009AD7;
+}
+.hoist__block {
+  background-color: #033154;
+}
+.apprentice-at__block {
+  background-color: #043743;
+}
+.work-together__block {
+  background-color: $secondary-color;
+}

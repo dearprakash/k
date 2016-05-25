@@ -1,0 +1,83 @@
+#work {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar-button,
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-track-piece,
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+    color: transparent;
+  }
+}
+.work-pagination {
+  list-style-type: none;
+  margin: 3em 0 0;
+  padding: 0;
+  white-space: nowrap;
+  &-item {
+    display: inline-block;
+    @media screen and (min-width: $md) {
+      &:first-child {
+        padding-left: 2em;
+      }
+    }
+  }
+  a {
+    vertical-align: top;
+    text-decoration: $secondary-color;
+  }
+}
+.work-card {
+    background-color: rgba($black, 0.1);
+    padding: 30px;
+    position: relative;
+    white-space: normal;
+    width: 260px;
+    height: 350px;
+    margin-left: 15px;
+  &__title {
+    font-size: 1.5em;
+    color: $white;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 300;
+    letter-spacing: -1px;
+    padding-bottom: 0;
+    line-height: 1;
+  }
+  &__role {
+    bottom: 2em;
+    color: $white;
+    left: 2em;
+    position: absolute;
+    font-weight: 300;
+    font-size: .75em;
+  }
+}
+
+.trillectro {
+  height: 1.5em;
+}
+.mycumortgage {
+  height: 1.25em;
+}
+.hoist {
+  height: 2em;
+}
+.view-all {
+  color: rgba($white, 0.7);
+  font-size: .75em;
+  font-weight: 300;
+}
+
+#more {
+  max-width: $max-width;
+  margin: .5em auto;
+}

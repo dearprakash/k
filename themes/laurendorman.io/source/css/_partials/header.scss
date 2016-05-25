@@ -1,0 +1,10 @@
+header {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+#logo {
+  margin: 10px 0;
+  @media screen and (min-width: $md) {
+    margin: 20px 0;
+  }
+}

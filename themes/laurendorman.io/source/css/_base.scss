@@ -1,0 +1,77 @@
+// Base Styles
+* { box-sizing: border-box }
+
+html { 
+  height: 100%;
+  background-color: transparent;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  font-smoothing: antialiased;
+  overflow: hidden;
+  padding: 0 10px;
+  position: relative;
+  -webkit-animation: mobile-background-loop 20s infinite;
+  animation: mobile-background-loop 20s infinite;
+  will-change: background-color;
+
+  @media screen and (min-width: $md) {
+    padding: 0 20px;
+    -webkit-animation: none;
+    animation: none;
+    background-color: transparent;
+  }
+}
+
+ul, ol , ol li ol li {
+  font-size: 20px;
+  @media screen and (min-width: $md) {
+    font-size: 24px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.touch body {
+  @media screen and (min-width: $sm) {
+    -webkit-animation: mobile-background-loop 20s infinite;
+    animation: mobile-background-loop 20s infinite;
+    will-change: background-color;
+  }
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+img { max-width: 100%; }
+
+table { 
+  width: 100%;
+}
+
+a {
+  word-wrap: break-word;
+  cursor: pointer;
+}

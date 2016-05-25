@@ -1,0 +1,18 @@
+work:
+  - project: Trillectro
+    url: /work/trillectro
+  - project: Wright-Patt's myCUmortage
+    url: /work/mycumortage
+  - project: Apprentice.at
+    url: /work/apprentice-at
+  - project: Hoist
+    url: /work/Hoist
+  - project: Style Guide
+    url: /style-guide
+
+# Content
+excerpt_link: Read More
+
+# Miscellaneous
+favicon: /favicon.ico
+twitter: '@laurendorman'

@@ -1,0 +1,32 @@
+footer {
+  max-width: $max-width;
+  display: block;
+  margin: 7em auto 3.5em;
+  color: $white;
+  font-size: 16px;
+  & a {
+    color: rgba($white, 0.7);
+    text-decoration: none;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.footer__nav {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  & li {
+    display: inline-block;
+
+    & a {
+      padding-right: 10px;
+    }
+  }
+}
