@@ -16,15 +16,15 @@ We started with a few small goals:
 
 ## Content Management System Research
 
-During the early stages of the project, I did research on Content Management Systems to provide the Trillectro team with an easy and affordable solution to manage their content. We chose to work with [Craft CMS](https://craftcms.com/) and it provided us with everything we needed – it was customizable, flexible enought to meet our unique content needs, easy to extend and has a great and supportive [community](https://craftcms.com/community).
+During the early stages of the project, I did research on Content Management Systems to provide the Trillectro team with an easy and affordable solution to manage their content. We chose to work with [Craft CMS](https://craftcms.com/) and it provided us with everything we needed – it was customizable, flexible enough to meet our unique content needs, easy to extend and has a great and supportive [community](https://craftcms.com/community).
 
 ## Content Strategy &amp; Design
 
-I teamed up with Trillectro's Co-Founder and Creative Director [Marcel Marshall](https://www.linkedin.com/in/martydctobc) to work on the content strategy throughout the redesign process. During this time, I was able to define the visual language of Trillectro's brand on the web based on their content. I used [plenty of gradients](../../writing/gradient-text-borders-and-backgrounds-for-buttons/) and stayed true to their minimal branding and art direction.
+I teamed up with Trillectro's Co-Founder and Creative Director [Marcel Marshall](https://www.linkedin.com/in/martydctobc) to work on the content strategy throughout the redesign process. During this time, I was able to define the visual language of Trillectro's brand on the web based on the experience we wanted to deliver around their content. I used [plenty of gradients](../../writing/gradient-text-borders-and-backgrounds-for-buttons/) and stayed true to their minimal branding and art direction.
 
 ## Support &amp; Enhancements
 
-After a successful launch, we decided to extend the project as their team moves into festival season to feature an online store, blog and a micro-site for their annual festival. My work with Trillectro has fostered an ongoing relationship with their team to tackle all of their web needs – from support and bugfixes to feature requests and expansion.
+After a successful launch, we decided to extend the project as their team moves into festival season to feature an online store, blog and a micro-site for their annual festival. My work with Trillectro has fostered an ongoing relationship with their team to tackle all of their web needs moving forward – from support and bugfixes to feature requests and expansion.
 
 ## Remote Communication
 
